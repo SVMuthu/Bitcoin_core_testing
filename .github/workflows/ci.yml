@@ -250,7 +250,7 @@ jobs:
           git rev-parse HEAD | Tee-Object -FilePath "$env:GITHUB_WORKSPACE\vcpkg_commit"
 
       - name: vcpkg tools cache
-        uses: actions/cache@name: 'ASan + LSan + UBSan + integer, no depends, USDTv4
+        uses: actions/cache@v4
         with:
           path: C:/vcpkg/downloads/tools
           key: ${{ github.job }}-vcpkg-tools
