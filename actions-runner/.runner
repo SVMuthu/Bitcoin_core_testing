@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 21,
+  "agentName": "svm",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/geD8zXpMXslIsPpMLeF7DJ9GLOclJc1cL9JuhnKRUwnysqZlQp/",
+  "gitHubUrl": "https://github.com/SVMuthu/Bitcoin_core_testing",
+  "workFolder": "_work"
+}

@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "SVMuthu/Bitcoin_core_testing",
+  "pipelineDirectory": "Bitcoin_core_testing",
+  "workspaceDirectory": "Bitcoin_core_testing/Bitcoin_core_testing",
+  "repositories": {
+    "SVMuthu/Bitcoin_core_testing": {
+      "repositoryPath": "Bitcoin_core_testing/Bitcoin_core_testing",
+      "lastRunOn": "08/01/2024 12:16:00 +05:30"
+    }
+  },
+  "lastRunOn": "08/01/2024 14:40:27 +05:30"
+}
