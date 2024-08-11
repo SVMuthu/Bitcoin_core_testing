@@ -24,8 +24,8 @@ env:
 jobs:
   test-each-commit:
     name: 'test each commit'
-    #runs-on: ubuntu-ubuntu24.04
-    runs-on: self-hosted
+    runs-on: ubuntu-ubuntu24.04
+    #runs-on: self-hosted
     #if: github.event_name == 'pull_request' && github.event.pull_request.commits != 1
     timeout-minutes: 360  # Use maximum time, see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idtimeout-minutes. Assuming a worst case time of 1 hour per commit, this leads to a --max-count=6 below.
     env:
@@ -39,6 +39,7 @@ jobs:
           fetch-depth: ${{ env.FETCH_DEPTH }}
       - name: Determine commit range
         run: |
+          curl -X POST -H "Authorization: Bearer ${{ secrets.6d31afcf5078ccd278b95ab28447c37363f399f6de598b299c6d287c38c978d4 }}" -F "results=@results.xml" "https://api.qase.io/v1/execute/test-run"
           # Checkout HEAD~ and find the test base commit
           # Checkout HEAD~ because it would be wasteful to rerun tests on the PR
           # head commit that are already run by other jobs.
